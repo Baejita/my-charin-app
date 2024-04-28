@@ -1,9 +1,15 @@
-import logoMFP from "../components/logoMFPWhite.png";
-
-function Nav() {
+function NavHam() {
   return (
-    <div>
-      <nav className="navbar">
+    <div className="hamber-z">
+      <svg viewBox="0 0 100 80" width="36" height="56" className="styleHAM">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+
+      <div></div>
+
+      {/* <nav className="navbar">
         <div>
           <img src={logoMFP} alt="logo" className="logo" />
         </div>
@@ -28,9 +34,9 @@ function Nav() {
             สส.ชริน วงศ์พันธ์เที่ยง
           </button>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 }
 
-export default Nav;
+export default NavHam;

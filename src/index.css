@@ -97,6 +97,8 @@ h1{
   
 }
 
+
+
 .navbar-logo img {
   width: 50px;
   /* Adjust size as needed */
@@ -124,8 +126,69 @@ h1{
 
   }
 
- 
+.toggle-ham-nav{
+position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  width: 100vW;
+  
+}
+ .nav-clik-ham {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 4rem;
+  margin: 0 auto;
+  gap: 2rem;
+  background-image: linear-gradient(to left,rgb(255, 174, 81), rgb(255, 124, 0.6));
+  font-size: 1.9rem;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+ }
 
+ .toggle-ham-nav-name{
+  margin-top: 9rem;
+  margin-bottom: 0;
+  background-color: #001d42;
+  color: #e4e4e4;
+  padding: 2rem;
+ }
+
+.hero-btn-toclose-hamberger {
+  border: none;
+    font-family: inherit;
+    border-radius: 20px;
+    color: #001d42;
+    font-size: large;
+    padding: 0.6rem 1.6rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-top: 100px;
+  
+    padding: 2.56rem;
+    z-index: 1000;
+    
+}
+
+.hamber-z{
+  position: absolute;
+  z-index: 10000;
+  margin-left: 85%;
+  margin-top: -19%;
+  cursor: pointer;
+}
+
+.hamber-z-hide {
+position: absolute;
+  z-index: 10000;
+  margin-left: 75%;
+  margin-top: -23%;
+  cursor: pointer;
+  padding: 4rem;
+  opacity: 0;
+  
+}
   
   /* Change color on hover */
 
@@ -330,8 +393,6 @@ h1 {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient( rgb(0, 48, 87,0.6), rgb(255, 124, 1));
-  
-    
   
 }
 
@@ -754,77 +815,6 @@ a{
   background-color: #001d42;
 }
 
-
-
-@media screen and (max-width:760px) {
-  body {
-    padding: 0;
-
-  }
-
-  .navbar {
-
-    font-size: small;
-    /* display: none; */
-  }
-
-  .button-charin {
-    font-size: smaller;
-    background-color: #0073ff;
-    display: none;
-  }
-
-  .hero-header {
-    font-size: 4rem;
-  }
-
-  .card-container-ALL {
-    flex-direction: column;
-    margin-top: 2rem;
-  }
-
-  .toggle-bg-black-contianer{
-    height: 180vh;
-  }
-
-    .hero-img {
-      width: 80%;
-      height: 100%;
-      margin-top: -9.2rem;
-      
-    }
-.hero-container{
-margin-bottom: -29.2rem;
-}
-    .img-RSA{
-      width: 80vW;
-    }
-
-        .subScribe-container-text-Rsa{
-          padding: 0;
-        }
-
-  .subScribe-container-text {
-      padding-top: 6rem;
-
-                    }
-
-  .subScribe-container {
-    margin:2rem 0 ;
-  }
-    .container{
-      margin-top: -65rem;
-    }
-
-     .province-hero{
-      line-height: 1.6;
-    }
-.double-quote {
-  margin: -50px;
-}
-
-}
-
 @media screen and (max-width:1200px) {
   body {
     padding: 0 14rem;
@@ -835,9 +825,11 @@ margin-bottom: -29.2rem;
     font-size: medium;
     /* display: none; */
   }
-.container-attitude{
-  font-size: 2.5rem;
-}
+
+  .container-attitude {
+    font-size: 2.5rem;
+  }
+
   .button-charin {
     font-size: smaller;
     background-color: #0073ff;
@@ -883,14 +875,17 @@ margin-bottom: -29.2rem;
     padding-left: 5rem;
   }
 
-    .container {
-      margin-top: -90rem;
-    }
-.subScribe-container{
-  display: flex;
-        padding: 6rem 6rem;
-        justify-content: center;}
+  .container {
+    margin-top: -90rem;
+  }
+
+  .subScribe-container {
+    display: flex;
+    padding: 6rem 6rem;
+    justify-content: center;
+  }
 }
+
 
 @media screen and (max-width:950px) {
   body {
@@ -898,9 +893,9 @@ margin-bottom: -29.2rem;
   }
 
   .navbar {
-
     font-size: small;
     /* display: none; */
+    
   }
 
     .container-attitude {
@@ -937,9 +932,12 @@ margin-bottom: -29.2rem;
   padding-top: 10rem;}
 
 }
+@media screen and (min-width:760px) {
+  .styleHAM {
+    display: none;
+  }}
 
-
-@media screen and (max-width:850px) {
+@media screen and (max-width:760px) {
   body {
     padding: 0;
 
@@ -1028,17 +1026,22 @@ margin-bottom: -29.2rem;
  }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:760px) {
   body {
     padding: 0;
 
   }
 
   .navbar {
-
     font-size: small;
-    /* display: none; */
+    
   }
+
+    
+     .nav-links {
+     opacity: 0;
+      display: none;
+     }
 
   .button-charin {
     font-size: smaller;
@@ -1047,7 +1050,90 @@ margin-bottom: -29.2rem;
   }
 
   .hero-header {
-    font-size: 3.2rem;
+    font-size: 4rem;
+  }
+
+  .card-container-ALL {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .toggle-bg-black-contianer {
+    height: 180vh;
+  }
+
+  .hero-img {
+    width: 80%;
+    height: 100%;
+    margin-top: -9.2rem;
+
+  }
+
+  .hero-container {
+    margin-bottom: -29.2rem;
+  }
+
+  .img-RSA {
+    width: 80vW;
+  }
+
+  .subScribe-container-text-Rsa {
+    padding: 0;
+  }
+
+  .subScribe-container-text {
+    padding-top: 6rem;
+
+  }
+
+  .subScribe-container {
+    margin: 2rem 0;
+  }
+
+  .container {
+    margin-top: -65rem;
+  }
+
+  .province-hero {
+    line-height: 1.6;
+  }
+
+  .double-quote {
+    margin: -50px;
+  }
+
+}
+
+
+
+@media screen and (max-width:480px) {
+  body {
+    padding: 0;
+
+  }
+
+    .navbar {
+      font-size: small;
+      padding: 0.2rem 2rem;
+      
+    }
+  
+    .nav-links {
+      opacity: 0;
+      display: none;
+    }
+
+ 
+
+         
+  .button-charin {
+    font-size: smaller;
+    background-color: #0073ff;
+    display: none;
+  }
+
+  .hero-header {
+    font-size: 2.69rem;
   }
 
   .card-container-ALL {
@@ -1121,4 +1207,9 @@ margin-bottom: -29.2rem;
   .hero-container {
     height: fit-content;
   }
+}
+
+.styleHAM{
+  fill: white;
+  
 }
