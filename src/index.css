@@ -182,15 +182,20 @@ position: absolute;
 .hamber-z-hide {
 position: absolute;
   z-index: 10000;
-  margin-left: 85%;
+  margin-left: 75vW;
   margin-top: -19%;
   cursor: pointer;
-  padding: 4rem;
+  padding: 2rem;
   opacity: 0;
-  font-size: 6rem;
+  font-size: 1.5rem;
+  justify-content: end;
+  background-color: transparent;
+  border-style: outset;
   
 }
-  
+ 
+
+         
   /* Change color on hover */
 
 
@@ -1092,7 +1097,7 @@ a{
   }
 
   .container {
-    margin-top: -65rem;
+    margin-top: -45rem;
   }
 
   .province-hero {
@@ -1190,7 +1195,7 @@ a{
 
   .container-attitude {
     flex-direction: column;
-    margin-top: 24rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
   }
 
