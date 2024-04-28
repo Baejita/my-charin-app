@@ -948,7 +948,7 @@ margin-bottom: -29.2rem;
   .navbar {
 
     font-size: small;
-    display: none;
+    /* display: none; */
   }
 
   .button-charin {
@@ -1037,7 +1037,7 @@ margin-bottom: -29.2rem;
   .navbar {
 
     font-size: small;
-    display: none;
+    /* display: none; */
   }
 
   .button-charin {
@@ -1068,7 +1068,7 @@ margin-bottom: -29.2rem;
   width: 60vw;
 }
 .container-attitude {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
   .img-RSA {
     width: 80vW;
