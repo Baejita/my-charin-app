@@ -97,27 +97,6 @@ h1{
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar-logo img {
   width: 50px;
   /* Adjust size as needed */
@@ -508,7 +487,7 @@ h3.card {
   margin-bottom: 50px;
   padding: 0;
   background-color: #001d42;
-  font-size: 3.5rem;
+  font-size: 2.9rem;
   box-shadow: 5px 10px 30px rgba(23, 23, 23, 0.6);
 
 }
@@ -1027,6 +1006,7 @@ margin-bottom: -29.2rem;
   flex-direction: column;
   margin-top: 6rem;
   margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 
 .container-attitude--p{
@@ -1088,7 +1068,7 @@ margin-bottom: -29.2rem;
   width: 60vw;
 }
 .container-attitude {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
   .img-RSA {
     width: 80vW;
