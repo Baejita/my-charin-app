@@ -138,19 +138,64 @@ position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 4rem;
+  padding: 2rem 4rem;
   margin: 0 auto;
   gap: 2rem;
-  background-image: linear-gradient(to left,rgb(255, 174, 81), rgb(255, 124, 0.6));
+  background-image: linear-gradient(to left,rgb(255, 155, 73), rgb(255, 94, 1));
   font-size: 1.9rem;
   opacity: 1;
   transition: all 0.3s ease-out;
  }
 
+
+       
+    .hero-header {
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(255, 255, 255));
+        }
+
+    .hero-p{
+          background-image: linear-gradient(270deg, transparent 0%, transparent 50%, rgb(255, 255, 255));
+          }
+
+        .nav-clik-ham-link{
+          
+          padding: 1rem 2rem;
+          font-weight: 400;
+            background-image: linear-gradient(120deg, transparent 50%, transparent 20%, rgb(255, 94, 0));
+            background-size: 200%;
+            transition: all .3s ease-out;
+            list-style: none;
+        }
+                
+        .nav-clik-ham-link:hover {
+                 background-position: 100%;
+                  background-image: linear-gradient(120deg, transparent 50%, rgb(252, 253, 255));
+                  background-size: 200%;
+                  color: whitesmoke;
+                  transform: translateX(1rem);
+                  font-weight: 500;
+                }
+
+      .nav-clik-ham-link:active {
+        background-color: white;
+        background-position: 100%;
+        box-shadow:0 1rem 1.5rem rgba(84, 84, 84, 0.4);
+        background-size: 200%;
+        font-weight: 500;
+        transform: translateY(0.06rem);
+        
+       
+      
+        
+                                }
+
+
+
+
  .toggle-ham-nav-name{
   margin-top: 9rem;
   margin-bottom: 0;
-  background-image: linear-gradient(to left, rgb(22, 95, 169),rgb(1, 58, 104));
+  background-image: linear-gradient(to left, rgb(22, 95, 169),rgb(0, 39, 70));
   padding: 2rem;
   color: #f6f6f6;
  }
@@ -171,34 +216,27 @@ position: absolute;
     
 }
 
-.hamber-z{
+/* .hamber-z{
   position: absolute;
   z-index: 10000;
   margin-left: 85%;
   margin-top: -19%;
   cursor: pointer;
-}
+} */
 
 .hamber-z-hide {
-position: absolute;
   z-index: 10000;
-  margin-left: 75%;
-  margin-top: -19%;
   cursor: pointer;
-  padding: 2rem;
   opacity: 0;
-  font-size: 1.5rem;
+  font-size: 5.6rem;
   justify-content: end;
   background-color: transparent;
-  border-style: outset;
+  border-style: none;
+  color: #f6f6f6;
   
 }
-
- 
-
          
   /* Change color on hover */
-
 
 .button {
   border: none; 
@@ -949,7 +987,9 @@ a{
     padding: 0;
 
   }
-
+ .hamber-z-hide {
+   opacity: 1;
+ }
   .navbar {
 
     font-size: small;
@@ -1031,6 +1071,7 @@ a{
  .container {
    margin-top: -20rem;
  }
+
 }
 
 @media screen and (max-width:760px) {
@@ -1042,6 +1083,7 @@ a{
   .navbar {
     font-size: small;
     
+   
   }
 
     

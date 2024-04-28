@@ -1,4 +1,5 @@
 import logoMFP from "../components/logoMFPWhite.png";
+import ButtonHam from "./ButtonHam";
 
 function Navbar() {
   return (
@@ -28,6 +29,7 @@ function Navbar() {
             สส.ชริน วงศ์พันธ์เที่ยง
           </button>
         </div>
+        <ButtonHam className="hamber-z" />
       </nav>
     </div>
   );

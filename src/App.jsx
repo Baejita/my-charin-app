@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 // import NavBarClickHam from "./components/NavBarClickHam";
-import NavHam from "./components/NavHam";
+// import NavHam from "./components/NavHam";
 
 import ButtonHam from "./components/ButtonHam";
 
@@ -13,8 +13,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <NavHam className="nav-ham"></NavHam>
-      <ButtonHam className="hamber-z" />
+      {/* <NavHam className="nav-ham"></NavHam> */}
+
       {/* <NavBarClickHam></NavBarClickHam> */}
       <Hero />
       <AttitudeSpeech />

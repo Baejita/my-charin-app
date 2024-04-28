@@ -16,7 +16,7 @@ function ButtonHam() {
         ""
       )}
       <button className="hamber-z-hide" onClick={handleClickHam}>
-        Hame
+        &#9776;
       </button>
     </>
   );
