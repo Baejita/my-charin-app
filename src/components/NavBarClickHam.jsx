@@ -7,18 +7,27 @@ function NavBarClickHam() {
       </div>
       <ul className="nav-clik-ham">
         <li className="nav-clik-ham-link">
-          <a href="https://lin.ee/7U79MeF">แจ้งปัญหา/รับเรื่องร้องเรียน</a>
+          <a href="https://lin.ee/7U79MeF" className="nav-clik-ham-link-white">
+            แจ้งปัญหา/รับเรื่องร้องเรียน
+          </a>
         </li>
         <li className="nav-clik-ham-link">
-          <a href="https://accounts.moveforwardparty.org/account/register">
+          <a
+            href="https://accounts.moveforwardparty.org/account/register"
+            className="nav-clik-ham-link-white"
+          >
             สมัครสมาชิกพรรค
           </a>
         </li>
         <li className="nav-clik-ham-link">
-          <a href="#">อาสาก้าวไกลอยุธยา</a>
+          <a href="#" className="nav-clik-ham-link-white">
+            อาสาก้าวไกลอยุธยา
+          </a>
         </li>
         <li className="nav-clik-ham-link">
-          <a href="#">ติดตามข้อมูลข่าวสาร</a>
+          <a href="#" className="nav-clik-ham-link-white">
+            ติดตามข้อมูลข่าวสาร
+          </a>
         </li>
       </ul>
       {/* <div className="hero-btn-toclose-hamberger">
